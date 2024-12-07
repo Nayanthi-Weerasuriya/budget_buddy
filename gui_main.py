@@ -167,6 +167,9 @@ def set_monthly_budget_gui():
     def submit_budget():
         try:
             monthly_budget = float(budget_entry.get())
+            if monthly_budget <= 0:
+                messagebox.error("Error", "Please enter a positive budget amount")
+                return
             connection = get_db_connection()
             cursor = connection.cursor()
             query = "INSERT INTO user_budget (user_id, monthly_budget) VALUES (%s, %s) ON DUPLICATE KEY UPDATE monthly_budget = %s"
