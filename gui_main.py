@@ -168,7 +168,7 @@ def set_monthly_budget_gui():
         try:
             monthly_budget = float(budget_entry.get())
             if monthly_budget <= 0:
-                messagebox.error("Error", "Please enter a positive budget amount")
+                messagebox.showerror("Error", "Please enter a positive budget amount")
                 return
             connection = get_db_connection()
             cursor = connection.cursor()
