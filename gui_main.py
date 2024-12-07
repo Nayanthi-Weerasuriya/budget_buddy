@@ -201,6 +201,10 @@ def show_main_menu():
 root = tk.Tk()
 root.title("Budget Buddy")
 
+# Add a welcome message
+welcome_label = tk.Label(root, text="Welcome to Budget Buddy!", font=("Arial", 16, "bold"))
+welcome_label.pack(pady=20)
+
 # Add main buttons for registration and login
 tk.Button(root, text="Register", command=register_user_gui).pack(pady=10)
 tk.Button(root, text="Login", command=login_user_gui).pack(pady=10)
