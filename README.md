@@ -1,2 +1,3 @@
 # budget_buddy
-my first uni prject from python using tkinter gui and mysql db. connection
+Budget Buddy
+A user-friendly personal finance management tool built with Python and Tkinter. Budget Buddy helps you track expenses, set monthly budgets, and monitor your spending habits.
