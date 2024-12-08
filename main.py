@@ -81,7 +81,7 @@ def validate_input(prompt, input_type=float):
     while True:
         try:
             value = input_type(input(prompt))
-            if value < 0:
+            if value =< 0:
                 raise ValueError
             return value
         except ValueError:
